@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    color: #ffffff;
+    background: linear-gradient(138deg, #ea39e9, #d9c006, #17cd8c, #e52afd, #63f5ea);
+    background-size: 300% 300%;
+    animation: gradient-animation 25s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.stop-box {
+    background: #262626;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(105, 105, 105, 0.5);
+    text-align: center;
+    width: 350px;
+    transition: transform 0.2s ease-in-out;
+    opacity: 0.6;
+    -webkit-box-shadow: 0px 0px 53px 9px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 53px 9px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 53px 9px rgba(0, 0, 0, 0.7);
+}
+
+.header h2 {
+    font-size: 28px;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 24px;
+    gap: 15px;
+}
+
+.timer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1dd1a1;
+}
+
+.mn {
+    font-size: 12px;
+    color: #9e9e9e;
+}
+
+.btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn1 {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 48%;
+}
+
+.green {
+    background-color: #1dd1a1;
+    box-shadow: 0 4px 8px rgba(29, 209, 161, 0.3);
+}
+
+.green:hover {
+    background-color: #10ac84;
+}
+
+.red {
+    background-color: #ee5253;
+    box-shadow: 0 4px 8px rgba(238, 82, 83, 0.3);
+}
+
+.red:hover {
+    background-color: #c0392b;
+}
